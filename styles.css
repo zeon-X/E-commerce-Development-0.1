@@ -66,6 +66,7 @@ body h1,h2,h3,h4,h5,h6,p{
     border: 1px solid black;
     border-radius: 5px;
     margin-left: 5px;
+    font-size: 14px;
 }
 .btn{
     font-size: 16px;
@@ -110,6 +111,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 /* ************************main important property*************************/
@@ -161,8 +163,9 @@ main{
  .product-title{
      margin: 0;
      margin-top: 10px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
+    color: var(--main-color);
  }
  .product-price{
     margin: 0;
@@ -199,4 +202,12 @@ main{
 .buy-now-btn:hover{
     background-color: var(--main-color);
     color: white;
+}
+
+/*----------------- header for mobile & tab view -start-------------*/
+
+@media only screen and (max-width : 668px) {
+    .products{
+        grid-template-columns: repeat(1,1fr);
+    }
 }

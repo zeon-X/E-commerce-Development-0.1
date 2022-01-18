@@ -1,0 +1,202 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+body h1,h2,h3,h4,h5,h6,p{
+    color: var(--main-color);
+}
+
+.ls-hidden{
+    display: none;
+}
+
+/*-------------CUSTOM COLOR VAR start--------------*/
+ :root{
+     --main-color : #18191A;
+     --bg-color : #242526;
+     --secondary-bg-color : #3A3B3C;
+     --discrip-color : #787885;
+ }
+/*-------------CUSTOM COLOR VAR end--------------*/
+
+
+
+/*----------------------------------
+ HEADER START HERE 
+ -------------------------------------*/
+
+ header{
+     width: 85%;
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .nav-bar,.cart{
+    font-size: 24px;
+ }
+ .site-name-div{
+     display: flex;
+ }
+ .site-name-div h1{
+    font-size: 25px;
+}
+
+ .nav-div ul{
+     display: flex;
+     list-style: none;
+ }
+ .nav-div ul li{
+    margin: 0 5px;
+}
+
+ .nav-btns{
+     display: flex;
+ }
+
+ .nav-btns a{
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.btn{
+    font-size: 16px;
+}
+.btn:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+
+/*----------------- header for mobile & tab view -start-------------*/
+@media only screen and (max-width : 668px) {
+    .ms-hidden{
+        display: none;
+
+    }
+    .mobile-view{
+        display: block;
+    }
+}
+
+@media only screen and (min-width : 669px) and (max-width:992px) {
+    .ms-hidden{
+        display: none;
+
+    }
+    .mobile-view{
+        display: block;
+    }
+}
+/*----------------- header for mobile & tab view -end----------------*/
+
+/*----------------------------------
+ HEADER end HERE 
+ -------------------------------------*/
+
+
+
+/* ************************main important property*************************/
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ************************main important property*************************/
+
+
+ /*----------------------------------
+           PRODUCT-SECTION
+ -------------------------------------*/
+ .section-two{
+     margin-top: 70px;
+     width: 90%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+.product-category-title{
+    font-size: 30px;
+    padding:0px 50px 10px;
+    margin-bottom: 70px;
+    border-image: radial-gradient(#3A3A3A, white);
+    border-image-slice: 1 ;
+    border-bottom: 1px solid;
+}
+ 
+ .products{
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     grid-gap: 30px;
+ }
+
+ .card{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     border-radius: 6px;
+     /* border: solid 1px black; */
+     box-shadow: 0 0 30px 5px #18191a21;
+ }
+ .card-content{
+     padding: 10px 0;
+     width: 93%;
+     display: flex;
+     flex-direction: column;
+     align-items: stretch;
+ }
+ .card-content img{
+     width: 100%;
+ }
+ .product-title{
+     margin: 0;
+     margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+ }
+ .product-price{
+    margin: 0;
+    font-size: 23px;
+    margin: 10px 0px;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.rating i{
+    font-size: 12px;
+    color: #FB8200;
+}
+.rating h6{
+    margin: 0 0 0 10px;
+    font-weight: 600;
+}
+.product-discription{
+    margin: 0;
+    font-size: 15px;
+    margin-bottom:10px ;
+    color: var(--discrip-color);
+}
+.buy-now-btn{
+    margin: 10px 0 20px 0;
+    text-align: center;
+    padding: 6px 15px;
+    border-radius: 5px;
+    border: 1px solid #18191A;
+}
+.buy-now-btn:hover{
+    background-color: var(--main-color);
+    color: white;
+}
